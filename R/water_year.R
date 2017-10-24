@@ -1,15 +1,14 @@
-#' Get water year based on numeric year and numeric month
+#' Get water year from date-time object.
 #'
 #' @md
-#' @param y Numeric year
-#' @param m Numeric month (i.e., 1 = Jan, 2 = Feb, etc.)
+#' @param x A date-time object.
 #'
 #' @export
 #' @examples
-#' water_year(2016, 9)
-#' water_year(2016, 10)
-#'
+#' x = c("2016-12-31", "2017-01-01", "2017-09-30", "2017-10-01")
+#' water_year(as.Date(x))
+#' water_year(as.Date(x)) == format(as.Date(x), "%Y")
 
-water_year <- function(y, m){
-  y + ifelse(m >= 10, 1, 0)
+water_year <- function(x){
+  as.numeric(format(x, "%Y")) + ifelse(as.numeric(format(x, "%m")) >= 10, 1, 0)
 }

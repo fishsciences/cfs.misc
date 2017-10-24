@@ -2,20 +2,18 @@
 % Please edit documentation in R/water_year.R
 \name{water_year}
 \alias{water_year}
-\title{Get water year based on numeric year and numeric month}
+\title{Get water year from date-time object.}
 \usage{
-water_year(y, m)
+water_year(x)
 }
 \arguments{
-\item{y}{Numeric year}
-
-\item{m}{Numeric month (i.e., 1 = Jan, 2 = Feb, etc.)}
+\item{x}{A date-time object.}
 }
 \description{
-Get water year based on numeric year and numeric month
+Get water year from date-time object.
 }
 \examples{
-water_year(2016, 9)
-water_year(2016, 10)
-
+x = c("2016-12-31", "2017-01-01", "2017-09-30", "2017-10-01")
+water_year(as.Date(x))
+water_year(as.Date(x)) == format(as.Date(x), "\%Y")
 }
