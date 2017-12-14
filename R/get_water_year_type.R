@@ -20,7 +20,7 @@ get_water_year_type <- function(){
   write.table(x = txt.sub, file = ff, col.names = FALSE, row.names = FALSE, quote = FALSE) # not sure if necessary to write and then read, but couldn't figure out how to read directly
   full.df = read.fwf(file = ff, widths = c(4, rep(8,4), 6, 10, rep(8,3), 7, 6)) # used text to columns tool in Excel to get estimates of column widths
   df = full.df[,c("V1", "V6", "V11")] # WARNING: hard-coded columns
-  names(df) = c("Year", "SAC", "SJR")
+  names(df) = c("WaterYear", "SAC", "SJR")
   df$SAC = gsub(df$SAC, pattern = " ", replacement = "") # clean up any extra spaces
   df$SJR = gsub(df$SJR, pattern = " ", replacement = "")
   return(df)
