@@ -23,5 +23,6 @@ get_water_year_type <- function(){
   names(df) = c("WaterYear", "SAC", "SJR")
   df$SAC = gsub(df$SAC, pattern = " ", replacement = "") # clean up any extra spaces
   df$SJR = gsub(df$SJR, pattern = " ", replacement = "")
+  unlink(ff)  # necessary?
   return(df)
 }
