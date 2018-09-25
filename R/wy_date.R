@@ -10,5 +10,6 @@
 #'
 
 wy_date <- function(x, y){
-  as.Date(paste0(y, "-10-01")) + (x - 1)
+  as.Date(paste0(y - 1, "-10-01")) + (x - 1)
 }
+
