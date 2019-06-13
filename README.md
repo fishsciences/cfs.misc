@@ -4,7 +4,7 @@ R package with miscellaneous convenience functions used in projects at Cramer Fi
 
 ### Prerequisites
 
-Installation requires the R package 'devtools' and a working development environment (see https://github.com/hadley/devtools).
+Installation requires the R package `devtools` and a working development environment (see https://github.com/hadley/devtools).
 
 ```
 install.packages("devtools")
