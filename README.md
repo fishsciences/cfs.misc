@@ -7,7 +7,7 @@ R package with miscellaneous convenience functions used in projects at Cramer Fi
 Installation requires the R package [`remotes`](https://remotes.r-lib.org).
 
 ```
-install.packages("devtools")
+install.packages("remotes")
 ```
 
 ### Installing
@@ -15,7 +15,7 @@ install.packages("devtools")
 cfs.misc is only available through Github.
 
 ```
-devtools::install_github("fishsciences/cfs.misc")
+remotes::install_github("fishsciences/cfs.misc")
 ```
 
 ### Basic Usage
