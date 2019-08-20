@@ -20,7 +20,7 @@ remotes::install_github("fishsciences/cfs.misc")
 
 ### Basic Usage
 
-`water_year` gets water year from a date-time object. A water year is define as October 1st to Sept 30th where the water year is the same as the calendar year from January to September.
+**`water_year`** gets water year from a date-time object. A water year is define as October 1st to Sept 30th where the water year is the same as the calendar year from January to September.
 
 ```
 > x = c("2016-12-31", "2017-01-01", "2017-09-30", "2017-10-01")
@@ -30,14 +30,14 @@ remotes::install_github("fishsciences/cfs.misc")
 [1] FALSE  TRUE  TRUE FALSE
 ```
 
-`wy_week` returns the number of complete seven day periods that have occurred between the date and October 1st, plus one. Based on `lubridate::week`.
+**`wy_week`** returns the number of complete seven day periods that have occurred between the date and October 1st, plus one. Based on `lubridate::week`.
 
 ```
 > wy_week(as.Date(c("2016-10-01", "2017-01-01")))
 [1]  1 14
 ```
 
-`wy_yday` gets the day of the water year from a date-time object.
+**`wy_yday`** gets the day of the water year from a date-time object.
 
 ```
 > wy_yday(as.Date(c("2016-01-01", "2016-10-01", "2017-01-01")))
@@ -46,14 +46,14 @@ remotes::install_github("fishsciences/cfs.misc")
 [1] 153 152
 ```
 
-`wy_date` gets the date for the day of the water year.
+**`wy_date`** gets the date for the day of the water year.
 
 ```
 > wy_date(x = seq(1, 361, 60), y = 2011)
 [1] "2010-10-01" "2010-11-30" "2011-01-29" "2011-03-30" "2011-05-29" "2011-07-28" "2011-09-26"
 ```
 
-`get_water_year_type` gets the water year classifications from [CDEC](http://cdec.water.ca.gov/cgi-progs/iodir/WSIHIST).
+**`get_water_year_type`** gets the water year classifications from [CDEC](http://cdec.water.ca.gov/cgi-progs/iodir/WSIHIST).
 
 ```
 > df <- get_water_year_type()
@@ -67,7 +67,7 @@ remotes::install_github("fishsciences/cfs.misc")
 6      1906   W   W
 ```
 
-`vet` quickly "vets" a data frame by previewing rows from the beginning, middle, and end of a data frame.
+**`vet`** quickly "vets" a data frame by previewing rows from the beginning, middle, and end of a data frame.
 
 ```
 > vet(iris)
@@ -86,7 +86,7 @@ remotes::install_github("fishsciences/cfs.misc")
 150          5.9         3.0          5.1         1.8  virginica
 ```
 
-`fill_missing` computes weighted means with a triangular weighting function. 
+**`fill_missing`** computes weighted means with a triangular weighting function. 
 
 ```
 > x <- 1:20
@@ -97,20 +97,20 @@ remotes::install_github("fishsciences/cfs.misc")
  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20
 ```
 
-`len(x)` is shorthand for `length(unique(x))` to count the number of unique elements in a vector.
+**`len(x)`** is shorthand for `length(unique(x))` to count the number of unique elements in a vector.
 
 ```
 > len(letters)
 [1] 26
 ```
 
-`timer` is a simple timer that plays a sound after the specified amount of time.
+**`timer`** is a simple timer that plays a sound after the specified amount of time.
 
 ```
 timer(5, "secs")
 ```
 
-`col2hex` converts quoted names of colors in R to hex codes.
+**`col2hex`** converts quoted names of colors in R to hex codes.
 
 ```
 > col2hex("wheat")
