@@ -1,4 +1,4 @@
-#' Computes weighted means triangular weighting function
+#' Computes weighted means with a triangular weighting function
 #'
 #' @md
 #' @param x   A numeric vector
@@ -6,8 +6,8 @@
 #'
 #' @export
 #' @examples
-#' x = 1:100
-#' x[seq(20, 80, 10)] = NA
+#' x <- 1:100
+#' x[seq(20, 80, 10)] <- NA
 #' fill_missing(x)
 #'
 

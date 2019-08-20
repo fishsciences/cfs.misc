@@ -4,7 +4,7 @@
 #'
 #' @export
 #' @examples
-#' df = get_water_year_type()
+#' df <- get_water_year_type()
 
 get_water_year_type <- function(){
   # fragile function with hard-coded elements

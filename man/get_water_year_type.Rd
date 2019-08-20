@@ -10,5 +10,5 @@ get_water_year_type()
 Get water year classifications from CDEC webpage
 }
 \examples{
-df = get_water_year_type()
+df <- get_water_year_type()
 }

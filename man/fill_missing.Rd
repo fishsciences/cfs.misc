@@ -2,7 +2,7 @@
 % Please edit documentation in R/fill_missing.R
 \name{fill_missing}
 \alias{fill_missing}
-\title{Computes weighted means triangular weighting function}
+\title{Computes weighted means with a triangular weighting function}
 \usage{
 fill_missing(x, win = 5)
 }
@@ -12,11 +12,11 @@ fill_missing(x, win = 5)
 \item{win}{Time window , e.g., if win = 3 then weighting = c(1, 2, 3, 0, 3, 2, 1)}
 }
 \description{
-Computes weighted means triangular weighting function
+Computes weighted means with a triangular weighting function
 }
 \examples{
-x = 1:100
-x[seq(20, 80, 10)] = NA
+x <- 1:100
+x[seq(20, 80, 10)] <- NA
 fill_missing(x)
 
 }
