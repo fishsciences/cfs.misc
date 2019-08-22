@@ -113,7 +113,7 @@ remotes::install_github("fishsciences/cfs.misc")
 timer(5, "secs")
 ```
 
-#### col2hex
+#### col2hex [:top:](#contents)
 `col2hex` converts quoted names of colors in R to hex codes.
 
 ```
