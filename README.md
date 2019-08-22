@@ -2,6 +2,9 @@
 
 R package with miscellaneous convenience functions used in projects at Cramer Fish Sciences.
 
+### Contents
+[col2hex](#col2hex)
+
 ### Prerequisites
 
 Installation requires the R package [`remotes`](https://remotes.r-lib.org).
@@ -110,7 +113,8 @@ remotes::install_github("fishsciences/cfs.misc")
 timer(5, "secs")
 ```
 
-**`col2hex`** converts quoted names of colors in R to hex codes.
+#### col2hex
+`col2hex` converts quoted names of colors in R to hex codes.
 
 ```
 > col2hex("wheat")
