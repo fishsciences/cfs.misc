@@ -2,7 +2,7 @@
 % Please edit documentation in R/vet.R
 \name{vet}
 \alias{vet}
-\title{Quickly "vet" a dataframe by previewing rows throughout the length of the dataframe}
+\title{Data frame preview}
 \usage{
 vet(d, n = 4L)
 }
@@ -12,7 +12,7 @@ vet(d, n = 4L)
 \item{n}{The number of rows you want to view from each section. The three sections that rows will be displayed from are the head of the dataframe, the middle (torso),  and the tail.  Default is 4 rows from each section.}
 }
 \description{
-Quickly "vet" a dataframe by previewing rows throughout the length of the dataframe
+Quickly "vet" a data frame by previewing rows throughout the length of the dataframe
 }
 \examples{
 vet(iris)

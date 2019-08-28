@@ -2,7 +2,7 @@
 % Please edit documentation in R/wy_week.R
 \name{wy_week}
 \alias{wy_week}
-\title{Get week in water year from a date-time object.}
+\title{Water year week}
 \usage{
 wy_week(x)
 }
@@ -10,6 +10,9 @@ wy_week(x)
 \item{x}{A date-time object.}
 }
 \description{
+Get week in water year from a date-time object.
+}
+\details{
 Returns the number of complete seven day periods that have occurred between the date and October 1st, plus one. Based on lubridate::week().
 }
 \examples{

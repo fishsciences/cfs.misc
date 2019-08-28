@@ -1,3 +1,5 @@
+#' Water year classifications
+#'
 #' Get water year classifications from CDEC webpage
 #'
 #' @md

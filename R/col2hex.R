@@ -1,3 +1,5 @@
+#' Find hex value
+#'
 #' A function to convert quoted names of colors in R to their Hex values
 #'
 #' @md

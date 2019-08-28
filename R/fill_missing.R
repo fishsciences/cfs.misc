@@ -1,3 +1,5 @@
+#' Fill missing data
+#'
 #' Computes weighted means with a triangular weighting function
 #'
 #' @md

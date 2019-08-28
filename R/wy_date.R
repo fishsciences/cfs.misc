@@ -1,3 +1,5 @@
+#' Water year date
+#'
 #' Get date for day of water year
 #'
 #' @md

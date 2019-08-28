@@ -2,7 +2,7 @@
 % Please edit documentation in R/wy_yday.R
 \name{wy_yday}
 \alias{wy_yday}
-\title{Get day of water year from date-time object.}
+\title{Day of water year}
 \usage{
 wy_yday(x)
 }

@@ -1,4 +1,6 @@
-#' Quickly "vet" a dataframe by previewing rows throughout the length of the dataframe
+#' Data frame preview
+#'
+#' Quickly "vet" a data frame by previewing rows throughout the length of the dataframe
 #'
 #' @md
 #' @param d A data frame object

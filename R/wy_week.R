@@ -1,3 +1,5 @@
+#' Water year week
+#'
 #' Get week in water year from a date-time object.
 #'
 #' Returns the number of complete seven day periods that have occurred between the date and October 1st, plus one. Based on lubridate::week().

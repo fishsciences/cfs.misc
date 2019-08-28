@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_water_year_type.R
 \name{get_water_year_type}
 \alias{get_water_year_type}
-\title{Get water year classifications from CDEC webpage}
+\title{Water year classifications}
 \usage{
 get_water_year_type()
 }

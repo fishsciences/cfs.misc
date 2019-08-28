@@ -1,3 +1,5 @@
+#' Water year
+#'
 #' Get water year from date-time object.
 #'
 #' @md

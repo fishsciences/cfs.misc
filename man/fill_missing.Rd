@@ -2,7 +2,7 @@
 % Please edit documentation in R/fill_missing.R
 \name{fill_missing}
 \alias{fill_missing}
-\title{Computes weighted means with a triangular weighting function}
+\title{Fill missing data}
 \usage{
 fill_missing(x, win = 5)
 }

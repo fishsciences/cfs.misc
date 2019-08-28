@@ -2,7 +2,7 @@
 % Please edit documentation in R/col2hex.R
 \name{col2hex}
 \alias{col2hex}
-\title{A function to convert quoted names of colors in R to their Hex values}
+\title{Find hex value}
 \usage{
 col2hex(color)
 }

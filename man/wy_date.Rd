@@ -2,7 +2,7 @@
 % Please edit documentation in R/wy_date.R
 \name{wy_date}
 \alias{wy_date}
-\title{Get date for day of water year}
+\title{Water year date}
 \usage{
 wy_date(x, y)
 }

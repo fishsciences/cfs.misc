@@ -2,7 +2,7 @@
 % Please edit documentation in R/water_year.R
 \name{water_year}
 \alias{water_year}
-\title{Get water year from date-time object.}
+\title{Water year}
 \usage{
 water_year(x)
 }
