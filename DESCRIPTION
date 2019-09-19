@@ -1,7 +1,7 @@
 Package: cfs.misc
 Type: Package
 Title: Cramer Fish Sciences Miscellaneous Convenience Functions
-Version: 0.1.0
+Version: 0.1.1
 Author: Myfanwy Johnston, Travis Hinkelman
 Maintainer: Travis Hinkelman <travis.hinkelman@fishsciences.net>
 Description: Miscellaneous Convenience Functions

@@ -12,6 +12,10 @@
 #'
 
 wy_yday <- function(x){
-  oct1 = as.Date(paste0(water_year(x) - 1, "-10-01"))
-  as.numeric(difftime(x, oct1, units = "days")) + 1
+  is_leap_year <- function(year){
+    (year %% 4 == 0) & ((year %% 100 != 0) | (year %% 400 == 0))
+  }
+  x_lt <- as.POSIXlt(x, tz = tz(x))
+  x_lt$yday + ifelse(x_lt$mon + 1L < 10L, 93,
+                     ifelse(is_leap_year(x_lt$year), -273, -272))
 }

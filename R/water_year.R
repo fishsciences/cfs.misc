@@ -12,5 +12,6 @@
 #' water_year(as.Date(x)) == format(as.Date(x), "%Y")
 
 water_year <- function(x){
-  as.integer(format(x, "%Y")) + ifelse(as.integer(format(x, "%m")) >= 10L, 1L, 0L)
+  x_lt <- as.POSIXlt(x, tz = tz(x))
+  x_lt$year + 1900L + ifelse(x_lt$mon + 1L >= 10L, 1L, 0L)
 }
