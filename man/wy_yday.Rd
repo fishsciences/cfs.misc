@@ -11,6 +11,7 @@ wy_yday(x)
 }
 \description{
 Get day of water year from date-time object.
+Warning: uses the system-specific time zone and not the time zone associated with the date-time object.
 }
 \examples{
 wy_yday(as.Date(c("2016-01-01", "2016-10-01", "2017-01-01")))

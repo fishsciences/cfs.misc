@@ -1,6 +1,7 @@
 #' Day of water year
 #'
 #' Get day of water year from date-time object.
+#' Warning: uses the system-specific time zone and not the time zone associated with the date-time object.
 #'
 #' @md
 #' @param x A date-time object.
@@ -15,7 +16,7 @@ wy_yday <- function(x){
   is_leap_year <- function(year){
     (year %% 4 == 0) & ((year %% 100 != 0) | (year %% 400 == 0))
   }
-  x_lt <- as.POSIXlt(x, tz = tz(x))
+  x_lt <- as.POSIXlt(x)
   x_lt$yday + ifelse(x_lt$mon + 1L < 10L, 93,
                      ifelse(is_leap_year(x_lt$year), -273, -272))
 }

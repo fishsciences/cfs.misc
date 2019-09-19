@@ -11,6 +11,7 @@ water_year(x)
 }
 \description{
 Get water year from date-time object.
+Warning: uses the system-specific time zone and not the time zone associated with the date-time object.
 }
 \examples{
 x <- c("2016-12-31", "2017-01-01", "2017-09-30", "2017-10-01")
