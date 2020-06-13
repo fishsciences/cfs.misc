@@ -15,5 +15,7 @@ get_water_year_type(water_year, valley = c("SAC", "SJR"))
 Get water year classifications
 }
 \examples{
-get_water_year_type(1997:2011)
+get_water_year_type(1900:1906)
+get_water_year_type(1900:1906, "SJR")
+get_water_year_type(2014:2020)
 }
