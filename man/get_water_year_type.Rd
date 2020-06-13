@@ -4,11 +4,16 @@
 \alias{get_water_year_type}
 \title{Water year classifications}
 \usage{
-get_water_year_type()
+get_water_year_type(water_year, valley = c("SAC", "SJR"))
+}
+\arguments{
+\item{water_year}{numeric vector of water years}
+
+\item{valley}{Sacramento or San Joaquin valley (options: SAC or SJR)}
 }
 \description{
-Get water year classifications from CDEC webpage
+Get water year classifications
 }
 \examples{
-df <- get_water_year_type()
+get_water_year_type(1997:2011)
 }

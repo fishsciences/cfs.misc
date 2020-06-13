@@ -1,12 +1,14 @@
 Package: cfs.misc
 Type: Package
 Title: Cramer Fish Sciences Miscellaneous Convenience Functions
-Version: 0.1.1
+Version: 0.2.0
 Author: Myfanwy Johnston, Travis Hinkelman
 Maintainer: Travis Hinkelman <travis.hinkelman@fishsciences.net>
 Description: Miscellaneous Convenience Functions
 License: MIT
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.0
 Imports: beepr, rvest, stringr 
+Depends: 
+    R (>= 2.10)
