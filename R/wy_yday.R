@@ -14,9 +14,10 @@
 
 wy_yday <- function(x){
   is_leap_year <- function(year){
-    (year %% 4 == 0) & ((year %% 100 != 0) | (year %% 400 == 0))
+    year %% 400 == 0 | (year %% 4 == 0 & year %% 100 != 0)
   }
+
   x_lt <- as.POSIXlt(x)
   x_lt$yday + ifelse(x_lt$mon + 1L < 10L, 93,
-                     ifelse(is_leap_year(x_lt$year), -273, -272))
+                     ifelse(is_leap_year(x_lt$year + 1900L), -273, -272))
 }
