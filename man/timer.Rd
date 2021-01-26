@@ -10,6 +10,11 @@ timer(interval = 1, units = "secs", sound = 2)
 \item{interval}{The length of time you want}
 
 \item{units}{The unit of time you want to use, i.e. "secs", "mins", "hours"}
+
+\item{sound}{Your sound of choice from beepr::beep}
+}
+\value{
+a sound from the beepr pkg; options are 1-11.  Defaults to 2
 }
 \description{
 A simple timer function.
