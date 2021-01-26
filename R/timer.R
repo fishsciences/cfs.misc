@@ -17,5 +17,5 @@ timer <- function(interval = 1, units = "secs", beep = 2) {
   while(stopwatch < interval){
     stopwatch <- round(as.double(difftime(Sys.time(), t0, u = units)))
   }
-  beepr::beep(beep)
+  beep(beep)
 }
