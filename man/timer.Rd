@@ -4,7 +4,7 @@
 \alias{timer}
 \title{A simple timer function.}
 \usage{
-timer(interval = 1, units = "secs", beep = 2)
+timer(interval = 1, units = "secs", sound = 2)
 }
 \arguments{
 \item{interval}{The length of time you want}
